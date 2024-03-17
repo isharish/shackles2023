@@ -1,0 +1,52 @@
+.facs{
+    margin: 20px;
+}
+.tier1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 230px;
+    background-color: aquamarine;
+    margin-bottom: 15px;
+}
+.fac1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    background-color: blue;
+}
+.facpic{
+    width: 30%;
+}
+
+.desc{
+    width: 60%;
+    background-color: bisque;
+}
+
+@media (max-width:700px) {
+    .tier1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .fac1 {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .desc{
+        width: 90%;
+    }
+    /* .founder-desc {
+        font-size: 13px;
+        font-weight: 700;
+    } */
+    /* .name {
+        margin-top: 10px;
+        font-size: 20px;
+    } */
+    .facpic {
+        max-width: 140px;
+    }
+}

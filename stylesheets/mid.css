@@ -1,0 +1,303 @@
+@import url('https://copyfonts.com/Qsojpr');
+@font-face {
+    font-family: 'bad-grunge';
+    src: url('BAD\ GRUNGE.ttf') format('truetype');
+}
+
+.d-desc {
+    font-family: 'bad-grunge';
+    color: white;
+    font-size: 54px;
+}
+
+.d-descs {
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.d-count {
+    font-family: 'bad-grunge';
+    color: #BE0E0E;
+    font-size: 160px;
+}
+
+.colon {
+    font-family: 'bad-grunge';
+    color: #BE0E0E;
+    font-size: 160px;
+}
+
+.countdown {
+    display: flex;
+    /* height: 400px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
+    margin-bottom: 150px;
+    /* background-color: #BE0E0E; */
+}
+
+.d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #BE0E0E; */
+}
+
+.count {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    /* background-color: #e6b800; */
+}
+
+.sh {
+    font-family: 'Mestizo Font';
+    font-weight: bolder;
+    text-align: justify;
+    width: 70%;
+}
+
+.shack {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dis {
+    font-family: 'Mestizo Font';
+    font-weight: bolder;
+    display: none;
+}
+
+.fuel {
+    /* float:left; */
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.sc {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.content {
+    font-family: 'sans-serief';
+    justify-content: center;
+    font-size: 30px;
+    color: grey;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.glow {
+    color: #e6b800;
+    font-family: bad-grunge;
+    font-size: 80px;
+    /* 0 0 5px #fff, */
+    /* 0 0 10px #fff, */
+    /* 0 0 21px #fff, */
+    /* 0 0 15px #e6b800, */
+    /* 0 0 50px #fff,     */
+    /* 0 0 92px #fff; */
+    /* 0 0 102px #fff; */
+    /* 0 0 151px #e6b800; */
+}
+
+.bu {
+    text-align: center;
+    background-color: black !important;
+}
+
+.reg-bt {
+    background-color: #e6b800;
+    color: #BE0E0E;
+    font-family: 'bad-grunge' !important;
+    font-size: 30px !important;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px #BE0E0E, 4px 0 15px #BE0E0E;
+}
+
+.reg-bt:hover {
+    box-shadow: 0px 5px 15px #BE0E0E, 5px 0px 15px #BE0E0E;
+}
+
+.main-bt {
+    background-color: black !important;
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:1024px) {
+    .shack {
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .content {
+        font-family: 'sans-serief';
+        justify-content: center;
+        font-size: 25px;
+        color: grey;
+        opacity: 0;
+        transform: translateY(100%);
+        animation-name: slide-up;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    .sh {
+        font-family: 'Mestizo Font';
+        font-weight: bolder;
+        text-align: justify;
+        width: 70%;
+    }
+    .fuel {
+        width: 100% !important;
+    }
+    .glow {
+        font-size: 70px;
+    }
+    .d-count {
+        font-size: 100px;
+    }
+    .d-desc {
+        font-size: 30px;
+    }
+    .d-descs {
+        font-size: 30px;
+    }
+    .colon {
+        font-size: 100px;
+    }
+    .countdown {
+        margin-top: -10px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:430px) {
+    .fuel {
+        width: 50% !important;
+    }
+    .content {
+        font-size: 20px !important;
+    }
+    .reg-bt {
+        position: relative;
+        top: 30%;
+        margin-top: 20%;
+    }
+    .dis {
+        display: block;
+    }
+    .d-count {
+        font-size: 60px;
+    }
+    .d-desc {
+        font-size: 20px;
+    }
+    .d-descs {
+        font-size: 20px;
+    }
+    .colon {
+        font-size: 60px;
+    }
+    .countdown {
+        margin-top: -10px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:380px) {
+    .reg-bt {
+        position: relative;
+        top: 50% !important;
+        margin-top: 5% !important;
+    }
+    .s {
+        display: none;
+    }
+}
+
+@media(max-width:325px) {
+    .reg-bt {
+        position: relative;
+        /* top: 20% !important; */
+        margin-top: 10% !important;
+    }
+    /* .fuel{
+        width: 50%;
+        position: relative;
+        bottom: 35%;
+    } */
+    .s {
+        display: none;
+    }
+    .fuel {
+        height: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    /* .shack{
+        height: 20% !important;
+        position: relative;
+        top: 25%;
+        width: 100%;
+    } */
+    .shack {
+        flex-shrink: inherit;
+    }
+    .fuel {
+        width: 100% !important;
+    }
+    /* .sh{
+        display: block;
+    }
+    .dis{
+        display:none;
+    } */
+}
+
+@media(max-width:992px) {
+    .fuel {
+        width: 120px;
+    }
+}
